@@ -1,0 +1,134 @@
+/*
+	Put anything you reference with "url()" in ../assets/
+	This way, you can minify your application, and just remove the "source" folder for production
+*/
+.nice-padding {
+	padding: 15px;
+}
+.panels {
+box-shadow: -4px 0px 4px rgba(0,0,0,0.4);
+}
+
+/* YUI */
+
+#employeeExpenses {
+	width: 500px;
+	height: 500px;
+}
+#employeeExpenses .tooltip {
+	background-color : #4c4c4c !important;
+	border-color: #fff;
+	text-align: center;
+	color: #eee;
+}
+#employeeExpenses .series_all{
+	transition:fill-opacity 0.5s ease,stroke-width 0.7s ease ;
+	
+	opacity : 1;
+	stroke-dasharray: none;
+	stroke-linecap: butt;
+	stroke-width: 1px;
+	stroke-opacity: 1;
+	stroke-linejoin: round;
+}
+#employeeExpenses .series_all:hover {
+	transition:fill-opacity 0s, stroke-width 0s;
+	fill-opacity: 0.7;
+}
+#employeeExpenses .expenses_0 {
+	fill: #d465ff;
+	stroke: #ce51ff;
+}
+#employeeExpenses .expenses_1{
+	fill: #00bcff;
+	stroke: #00acea;
+}
+#employeeExpenses .expenses_2 {
+	fill: #00f467;
+	stroke: #00e05e;
+}
+#employeeExpenses .expenses_2.month_1 {
+		fill: red;
+		stroke: white;
+}
+
+/* D3js */
+
+#d3graph .tooltip {
+	position: absolute;           
+	text-align: center;           
+	width: 60px;                  
+	height: 28px;                 
+	padding: 2px;             
+	font: 12px sans-serif;       
+	border: 2px;      
+	border-radius: 3px;           
+	pointer-events: none;
+	background : #4c4c4c;
+	border: #fff;
+	color: #eee;         
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.bar_all{
+	transition:fill-opacity 0.5s ease,stroke-width 0.5s ease ;
+	fill-opacity : 1;
+	/*stroke-dasharray: none;*/
+	/*stroke-linecap: butt;*/
+	stroke-width: 2px;
+	stroke-opacity: 1;
+	stroke-linejoin: round;
+}
+.bar_all:hover{
+	transition:fill-opacity 0s, stroke-width 0s;
+	fill-opacity : 0.6;
+	stroke-width:4px;
+	stroke-linejoin: square;
+}
+.bar {
+	transition-property:opacity;
+	fill: steelblue;
+	stroke: #ce51ff;
+}
+.series_0{
+	fill:#d465ff ;
+	stroke: #ce51ff;
+}
+.series_1{
+	fill:#00bcff ;
+	stroke: #00acea;
+}
+.series_2{
+	fill:#00ea63 ;
+	stroke: #00d65a;
+}
+
+.x.axis path {
+  display: none;
+}
+#d3graph text{
+	transition: font 0.1s ease;
+	font: 12px sans-serif;
+}
+#d3graph text:hover{
+	transition: font 0s;
+	font: italic 15px sans-serif;
+}
+
+#d3graph .y.axis line{
+	transition: stroke-width 0.3s ease;
+	stroke-width:1px;
+	stroke:gray;
+	stroke-opacity:0.4;
+}
+#d3graph 
+/*#d3graph .y.axis:hover line{
+	transition: stroke-width 0s;
+	stroke-width:2px;
+	stroke:gray;
+	stroke-opacity:0.4;
+}*/
